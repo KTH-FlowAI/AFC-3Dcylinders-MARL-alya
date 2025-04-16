@@ -1,0 +1,28 @@
+DRL_09_27_BASE
+   Merged with Arnau code:
+      -INCLUDES
+      -Jet class created
+      -Jet and probes functions moved to root directory (functions.py deleted)
+      -alya.py to run all subprocess
+      -ultra_cleaner.py is now ultra_cleaner.sh
+   Files deleted:
+      -switch_continue_restart.py
+      -ultra_cleaner.py
+      -initials_conditions.py
+      -write_initial_conditions.py
+DRL_09_23_BASE
+   The number of jets is now defined in parameters and it is automatized to have 0 mass flow rate
+   functions for writing actions and postprocessing them have been redefined accordingly
+   Q_0 from geometry_parameters has been removed. Also in the Environment, in the Jet_BCS function of the cylinder and in the smooth_function of functions.py
+   bool_smooth from environment and jet_BCS has been removed.
+DRL_09_20_BASE
+   *.geo, airfoil.dat and auxiliar_box.dat have been moved to the corresponding case/mesh directory
+   Env2D.py: rewards are saved now by separeted environments
+   postprocessing functions in py_toplot have been cleaned and improved
+DRL_09_16_BASE
+   parabolic smooth function for transition between actions has been added
+   Fixed bug with geo_file_maker.py
+DRL_09_12_BASE
+   /gmsh/geo_file_maker.py automates the generation of the mesh for the airfoil
+   parameters.py can be used to introduce the airfoil and jet parameters to generate the mesh
+   extract_forces.py takes into account whether the airfoil or the inflow is rotated to do the decomposition of aerodynamic forces
